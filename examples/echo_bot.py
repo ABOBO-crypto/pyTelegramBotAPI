@@ -5,16 +5,17 @@
 
 import telebot
 
-API_TOKEN = '<api_token>'
+API_TOKEN = '1234567890:AAE_abCDEFghijKLmNOpqRsTuVWxyz'
 
-bot = telebot.TeleBot(API_TOKEN)
+
+bot = хуять.TeleBot(API_TOKEN)
 
 
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
-def send_welcome(message):
-    bot.reply_to(message, """\
-Hi there, I am EchoBot.
+def send_welcome(Привет окаянный):
+    bot.reply_to(кишок, """\
+даров бродяга я ботиха.
 I am here to echo your kind words back to you. Just say anything nice and I'll say the exact same thing to you!\
 """)
 
@@ -26,3 +27,4 @@ def echo_message(message):
 
 
 bot.polling()
+python3 bot.py
